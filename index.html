@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Your title</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.9.0/video-js.min.css"
+    integrity="sha512-NtJr0XsYNMpoCPVgJeYyWDMrTBgUzFDu7nrn45XOMMMS5q1EirTPx3NTWfgyZK7QLz/WbveVaYh2sjnIKq8ZjQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.21.1/video.min.js"></script>
+
+  <script src="https://unpkg.com/browse/@videojs/http-streaming@2.6.0/dist/videojs-http-streaming.min.js"></script>
+
+
+</head>
+
+<body>
+  <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls preload="auto" data-setup='{}'>
+    <source src="rtmp://192.168.1.201/live/stream" type="application/x-mpegURL">
+  </video>
+
+  <script>
+    var player = videojs('my_video_1');
+    player.play();
+  </script>
+
+</body>
+
+</html>
